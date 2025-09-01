@@ -53,3 +53,15 @@ def list_combinations(atoms: list, k_comb: int) -> list:
         combinations.append(comb)
     return combinations
 
+def print_todo(combinations: list):
+
+    """
+    Expects a list of tuples with combinations of size k HEA groups.
+
+    Prints ordered list to std.out
+    """
+    i = 1
+    for comb in combinations:
+        print(i,''.join(comb))
+        i += 1
+
