@@ -2,6 +2,7 @@
 import random
 import ase
 import dpdata as dp
+import itertools
 
 """
 The goal of this code is to make two methods:
@@ -46,4 +47,9 @@ def HEA_supercell_replacement(super_cell :dp.System, atom_distributions: dict ) 
 
     return super_cell
 
+def list_combinations(atoms: list, k_comb: int) -> list:
+    combinations = []
+    for comb in itertools.combinations(atoms,k_comb):
+        combinations.append(comb)
+    return combinations
 
