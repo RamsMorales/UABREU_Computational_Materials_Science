@@ -87,7 +87,7 @@ if Toggle:
             file.write("#SBATCH --begin=now+0hour\n")
             file.write("#SBATCH --mail-user=myname@myschool.edu\n")
             file.write("#SBATCH --mail-type=FAIL                 # on failure\n")
-            file.write("#SBATCH -A PHY20015                      # allocation name\n")
+            file.write("#SBATCH -A NAME                     # allocation name\n")
             file.write("\n")
             file.write("source ~cazes/texascale_settings.sh\n")
             file.write("\n")
